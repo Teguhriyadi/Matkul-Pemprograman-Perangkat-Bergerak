@@ -14,7 +14,7 @@
 */
 
 use Laravel\Lumen\Routing\Router;
-use App\Http\Controllers\AuthorController;
+use App\Http\Controllers\WaliSantriController;
 
 $router->get('/', function () use ($router) {
 
@@ -33,7 +33,7 @@ $router->group(
 
         $router->get(
             'wali_santri/{id}',
-            ['uses' => 'WaliSantriController@showOneAuthor']
+            ['uses' => 'WaliSantriController@edit']
         );
 
         $router->post(
