@@ -14,7 +14,7 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-  final String? url = "http://192.168.98.207:2909/api/wali_santri";
+  final String? url = "http://192.168.124.207:2909/api/wali_santri";
 
   Future<List<dynamic>> dataWaliSantri() async {
     var response = await http.get(Uri.parse(url!));

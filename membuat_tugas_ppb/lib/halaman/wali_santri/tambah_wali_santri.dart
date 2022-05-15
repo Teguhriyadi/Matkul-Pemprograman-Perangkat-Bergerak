@@ -13,7 +13,7 @@ class AddAuthor extends StatelessWidget {
 
   Future tambahAuthor() async {
     final response = await http
-        .post(Uri.parse("http://192.168.98.207:2909/api/wali_santri"), body: {
+        .post(Uri.parse("http://192.168.124.207:2909/api/wali_santri"), body: {
       "nama": _nameController.text,
       "email": _emailController.text,
       "no_hp": _nohpController.text,

@@ -17,7 +17,7 @@ class EditWaliSantri extends StatelessWidget {
 
   Future editWaliSantri() async {
     final response = await http.put(
-        Uri.parse("http://192.168.98.207:2909/api/wali_santri/" +
+        Uri.parse("http://192.168.124.207:2909/api/wali_santri/" +
             wali['id'].toString()),
         body: {
           "nama": _nameController.text,

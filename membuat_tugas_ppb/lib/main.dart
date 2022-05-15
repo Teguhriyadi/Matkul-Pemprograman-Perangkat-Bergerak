@@ -1,19 +1,15 @@
 import 'package:flutter/material.dart';
-import 'package:membuat_tugas_ppb/halaman/home_page.dart';
+import 'package:membuat_tugas_ppb/auth/login.dart';
 
-void main() {
-  runApp(MyApp());
-}
+void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
-
+  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: "Mohammad",
-      home: HomePage(),
+      home: LoginPage(),
     );
   }
 }
